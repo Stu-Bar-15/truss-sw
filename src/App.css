@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.material-table th {
+  white-space: nowrap;
+}
+.material-table__row {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.material-table__row[aria-checked='true'] {
+  background-color: #fafbfe;
+}
+.material-table__row:hover {
+  background-color: #f2f4f7;
+}
+.material-table__pagination {
+  float: right;
+}
+.material-table__pagination button:hover {
+  background-color: #fafbfe !important;
+}
+.material-table__pagination > div {
+  padding: 0;
+}
+.material-table__pagination span, .material-table__pagination div, .material-table__pagination svg {
+  color: #646777;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.planet-cell {
+  border: 1px solid gray !important;
+}
+
+.planet-cell-header {
+  border-bottom: none !important;
+}
