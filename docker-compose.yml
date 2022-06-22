@@ -1,0 +1,12 @@
+---
+version: "3.9"
+services:
+  truss-react-app:
+    restart: always
+    build: .
+    command: bash app-start.sh
+    volumes:
+      - .:/code
+      - /code/node_modules
+    ports:
+      - "3000:3000"
